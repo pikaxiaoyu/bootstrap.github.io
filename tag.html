@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+   		<title>bootstrap项目实战</title>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+<!----------------------------------------导航----------------------------------------->
+		<nav class="navbar navbar-default">
+		    <div class="container">
+		        <!--小屏幕导航折叠按钮-->
+		        <div class="navbar-header">
+		        	<!--data-target=".navbar-collapse" 也可以使用class，但是要保证他的唯一性-->
+		            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <a href="index.html" class="navbar-brand">BBS</a>
+		        </div>
+		        <!--小屏幕导航按钮和logo-->
+		        <!--导航-->
+		        <div class="navbar-collapse collapse">
+		            <ul class="nav navbar-nav">
+		                <li ><a href="index.html">
+		                	<span class="glyphicon glyphicon-home"></span>
+		                	&nbsp;&nbsp;后台首页</a></li>
+		                <li class="active"><a href="user_list.html">
+		                	<span class="glyphicon glyphicon-user"></span>
+		                	&nbsp;&nbsp;用户管理</a></li>
+		                <li><a href="content.html">
+		                	<span class="glyphicon glyphicon-list-alt"></span>
+		                	&nbsp;&nbsp;内容管理</a></li>
+		                <li><a href="tag.html">
+		                	<span class="glyphicon glyphicon-tags"></span>
+		                	&nbsp;&nbsp;标签管理</a></li>
+		            </ul>
+		            <!--把导航条分两部分导航-->
+		            <ul class="nav navbar-nav navbar-right">
+		                <li class="dropdown">
+		                    <a type="button" data-toggle="dropdown">
+		                        admin
+		                        <span class="caret"></span>
+		                    </a>
+		                    <ul class="dropdown-menu" >
+		                        <li><a href="index.html">
+		                        	<span class="glyphicon glyphicon-screenshot"></span>
+		                        	&nbsp;&nbsp;前台首页</a></li>
+		                        <li><a href="index.html">
+		                        	<span class="glyphicon glyphicon-user"></span>
+		                        	&nbsp;&nbsp;个人主页</a></li>
+		                        <li><a href="index.html">
+		                        	<span class="glyphicon glyphicon-cog"></span>
+		                        	&nbsp;&nbsp;个人设置</a></li>
+		                        <li><a href="index.html">
+		                        	<span class="glyphicon glyphicon-credit-card"></span>
+		                        	&nbsp;&nbsp;账户中心</a></li>
+		                        <li><a href="index.html">
+		                        	<span class="glyphicon glyphicon-heart"></span>
+		                        	&nbsp;&nbsp;我的收藏</a></li>
+		                    </ul>
+		                </li>
+		                <li><a href="#bbs"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+<!----------------------------------------主体内容----------------------------------------->
+		<div class="container">
+		    <div class="row">
+		        <div class="col-md-12">
+		        	<!--页面标题 它会在网页标题四周添加适当的间距-->
+		            <div class="page-header" style=" margin-top: 0;">
+		                <h1 style="margin: 0;font-size: 16px;">TAG标签管理</h1>
+		            </div>
+		            <div class="col-md-12 " style="padding: 0;">
+		                <form>
+		                    <div class="col-md-10">
+		                        <input class="form-control" placeholder="请输入要添加的标签">
+		                    </div>
+		                    <div class="col-md-2">
+		                        <button type="submit" class="btn btn-default">添加</button>
+		                    </div>
+		                </form>
+		            </div>
+		            <div class="col-md-12 " style=" padding-top: 15px;">
+		                <div class="alert alert-info alert-dismissible pull-left" 
+		                	style="margin: 0 15px 15px 0;">
+		                    <button type="button" class="close" data-dismiss="alert" >
+		                    	<span>&times;</span></button>
+		                    <strong>bootstrap</strong>
+		                </div>
+		                <div class="alert alert-info alert-dismissible  pull-left" 
+		                	style="margin: 0 15px 15px 0;">
+		                    <button type="button" class="close" data-dismiss="alert" >
+		                    	<span>&times;</span></button>
+		                    <strong>麦子学院</strong>
+		                </div>
+		                <div class="alert alert-info alert-dismissible  pull-left" 
+		                	style="margin: 0 15px 15px 0;">
+		                    <button type="button" class="close" data-dismiss="alert" >
+		                    	<span >&times;</span></button>
+		                    <strong>前端课程</strong>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+<!---------------------------------------网站底部----------------------------------------->
+		<footer style="font-weight: 400;text-align: center;padding:20px ;">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-md-12">
+		                <p>
+		                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;
+		                    www.BBS.com&nbsp;&nbsp;
+		                    蜀ICP备13014270号-4
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
+	</body>
+</html>
